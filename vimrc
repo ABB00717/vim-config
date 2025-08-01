@@ -41,6 +41,9 @@ set backup                      "Back up the save file with postfix '~'
 set patchmode=.orig             "Save the first version of the file
 set backupext=.bak              "Name the backup file with the specific postfix
 
+"Command completion menu
+set wildmenu
+set wildoptions=pum,tagfile
 
 "Plugins
 call plug#begin()
