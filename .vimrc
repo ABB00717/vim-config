@@ -1,5 +1,5 @@
-
-set encoding=UTF-8  				
+"Core
+set encoding=UTF-8
 set termguicolors
 set nocompatible				"Turn off the compability with Vi
 filetype plugin indent on		"Detect filetype
@@ -37,18 +37,23 @@ set mouse=a
 "set clipboard=unnamedplus
 set hidden 					    "Allow you to store unsave file into buffer
 set autoread					"Auto reload while file's edited external
-set backup                     "Back up the save file with postfix '~'
+set backup                      "Back up the save file with postfix '~'
 set patchmode=.orig             "Save the first version of the file
 set backupext=.bak              "Name the backup file with the specific postfix
+
 
 "Plugins
 call plug#begin()
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
-Plug 'rktjmp/lush.nvim'
-Plug 'adisen99/apprentice.nvim'
+
+Plug 'dense-analysis/ale'
+
+Plug 'Shougo/deoplete.nvim'
+Plug 'roxma/nvim-yarp'
+Plug 'roxma/vim-hug-neovim-rpc'
 call plug#end()
-"
+
 "Themes
 set termguicolors
 set background=dark
@@ -56,3 +61,22 @@ colorscheme apprentice
 "colorscheme fogbell
 "colorscheme github_dimmed
 "colorscheme base16-grayscale-dark
+"colorscheme monochrome
+
+"Enable Deoplete and set up keybindings
+let g:deoplete#enable_at_startup = 1
+
+let g:ale_linters = {
+    \'python': ['pylsp'],
+    \'c': ['clangd'],
+    \'cpp': ['clangd'],
+\}
+
+let g:ale_fixers = {
+   \'python': ['black'],
+   \'c': ['clang-format'],
+   \'cpp': ['clang-format'],
+   \'*': ['remove_trailing_lines', 'trim_whitespace'],
+\}
+
+let g:ale_fix_on_save = 1 "Fix file on save
