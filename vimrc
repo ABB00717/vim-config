@@ -83,3 +83,9 @@ let g:ale_fixers = {
 \}
 
 "let g:ale_fix_on_save = 1 "Fix file on save
+
+"Keymaps
+nnoremap <F2> :ALERename<Enter>
+nnoremap <C-K><C-D> :ALEGoToDefinition<Enter>
+nnoremap <C-K><C-I> :ALEGoToDefinition<Enter>  
+nnoremap <C-K><C-H> :ALEHover<Enter>  
