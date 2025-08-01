@@ -15,7 +15,7 @@ let g:colors_name = 'apprentice'
 let s:t_Co = has('gui_running') ? 16777216 : str2nr(&t_Co)
 let s:tgc = has('termguicolors') && &termguicolors
 
-let g:terminal_ansi_colors = ['#1c1c1c', '#af5f5f', '#5f875f', '#87875f', '#5f87af', '#5f5f87', '#5f8787', '#6c6c6c', '#444444', '#ff8700', '#87af87', '#ffffaf', '#87afd7', '#8787af', '#5fafaf', '#ffffff']
+let g:terminal_ansi_colors = ['#1c1c1c', '#af5f5f', '#5f875f', '#87875f', '#5f87af', '#5f5f87', '#5f8787', '#6c6c6c', '#444444', '#ff8700', '#87af87', '#c3c390', '#87afd7', '#8787af', '#5fafaf', '#ffffff']
 
 hi! link Boolean Constant
 hi! link Character Constant
@@ -78,12 +78,12 @@ hi Error guifg=#af5f5f guibg=NONE guisp=NONE gui=reverse ctermfg=131 ctermbg=NON
 hi ErrorMsg guifg=#af5f5f guibg=#262626 guisp=NONE gui=reverse ctermfg=131 ctermbg=235 cterm=reverse term=bold,reverse
 hi FoldColumn guifg=#6c6c6c guibg=#1c1c1c guisp=NONE gui=NONE ctermfg=242 ctermbg=234 cterm=NONE term=NONE
 hi Folded guifg=#6c6c6c guibg=#1c1c1c guisp=NONE gui=NONE ctermfg=242 ctermbg=234 cterm=NONE term=NONE
-hi Function guifg=#ffffaf guibg=NONE guisp=NONE gui=NONE ctermfg=229 ctermbg=NONE cterm=NONE term=NONE
+hi Function guifg=#c3c390 guibg=NONE guisp=NONE gui=NONE ctermfg=229 ctermbg=NONE cterm=NONE term=NONE
 hi Identifier guifg=#5f87af guibg=NONE guisp=NONE gui=NONE ctermfg=67 ctermbg=NONE cterm=NONE term=NONE
 hi Ignore guifg=NONE guibg=NONE guisp=NONE gui=NONE ctermfg=NONE ctermbg=NONE cterm=NONE term=NONE
 hi IncSearch guifg=#262626 guibg=#af5f5f guisp=NONE gui=NONE ctermfg=235 ctermbg=131 cterm=NONE term=bold,reverse,underline
 hi LineNr guifg=#6c6c6c guibg=#1c1c1c guisp=NONE gui=NONE ctermfg=242 ctermbg=234 cterm=NONE term=NONE
-hi MatchParen guifg=#ffffaf guibg=#1c1c1c guisp=NONE gui=NONE ctermfg=229 ctermbg=234 cterm=NONE term=bold,underline
+hi MatchParen guifg=#c3c390 guibg=#1c1c1c guisp=NONE gui=NONE ctermfg=229 ctermbg=234 cterm=NONE term=bold,underline
 hi ModeMsg guifg=#87af87 guibg=#262626 guisp=NONE gui=reverse ctermfg=108 ctermbg=235 cterm=reverse term=bold
 hi MoreMsg guifg=#5f8787 guibg=NONE guisp=NONE gui=NONE ctermfg=66 ctermbg=NONE cterm=NONE term=NONE
 hi NonText guifg=#585858 guibg=NONE guisp=NONE gui=NONE ctermfg=240 ctermbg=NONE cterm=NONE term=NONE
@@ -93,7 +93,7 @@ hi PmenuSel guifg=#262626 guibg=#5f8787 guisp=NONE gui=NONE ctermfg=235 ctermbg=
 hi PmenuThumb guifg=#5f8787 guibg=#5f8787 guisp=NONE gui=NONE ctermfg=66 ctermbg=66 cterm=NONE term=NONE
 hi PreProc guifg=#5f8787 guibg=NONE guisp=NONE gui=NONE ctermfg=66 ctermbg=NONE cterm=NONE term=NONE
 hi Question guifg=#87af87 guibg=NONE guisp=NONE gui=NONE ctermfg=108 ctermbg=NONE cterm=NONE term=standout
-hi Search guifg=#262626 guibg=#ffffaf guisp=NONE gui=NONE ctermfg=235 ctermbg=229 cterm=NONE term=reverse
+hi Search guifg=#262626 guibg=#c3c390 guisp=NONE gui=NONE ctermfg=235 ctermbg=229 cterm=NONE term=reverse
 hi SignColumn guifg=#6c6c6c guibg=#1c1c1c guisp=NONE gui=NONE ctermfg=242 ctermbg=234 cterm=NONE term=reverse
 hi Special guifg=#5f875f guibg=NONE guisp=NONE gui=NONE ctermfg=65 ctermbg=NONE cterm=NONE term=NONE
 hi SpecialKey guifg=#585858 guibg=NONE guisp=NONE gui=NONE ctermfg=240 ctermbg=NONE cterm=NONE term=bold
